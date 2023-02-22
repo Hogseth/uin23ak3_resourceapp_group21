@@ -1,11 +1,12 @@
 import './App.css';
 import './css/main.css';
 import Header from './components/Header';
+import Button from './components/Button';
 function App() {
   return (
     <div className="App">
      <Header/>
-     <h1> Hei</h1>
+     <Button />
     </div>
   );
 }
