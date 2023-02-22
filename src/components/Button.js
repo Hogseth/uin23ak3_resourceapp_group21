@@ -1,3 +1,12 @@
+//import resources from './Ressurser.js'
 export default function Button(){
-    return
+    return (
+        <>
+        <button>placeholder</button>
+        <button>placeholder</button>
+        <button>placeholder</button>
+        <button>placeholder</button>
+        <button>placeholder</button>
+        </>
+    )
 }
