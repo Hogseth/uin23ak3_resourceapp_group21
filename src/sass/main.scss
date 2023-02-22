@@ -3,5 +3,70 @@ body{color:blue;
 }
 
 header{
-    color:red; 
+    
+
+    h1{
+        
+        border: 1px solid var(--grey);
+        color: var(--darkgrey);
+        text-transform: uppercase;
+        padding: 2.5rem 2rem;
+        font-size: 2rem;
+    
+    }
+
+}
+
+body {
+    background-color: white; 
+    padding: 2% 10%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+button {
+    font-size: 100%; 
+    width: 30%;
+    height: 20%;
+    color: var(--darkgrey);
+    padding: 1rem;
+}
+
+.activeBtn{
+    color: white;
+    background-color: var(--lightblue);
+    border: 2px solid var(--lightblue)
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+article {
+    border: 1px solid var(--grey);
+    border-top: 5px solid var(--lightblue);
+    padding: 1rem 2rem;
+
+    p{
+        color: var(--darkgrey);
+        font-size: 20px;
+    }
+
+    h2 {
+        text-transform:  uppercase;
+        color: var(--darkgrey);
+    
+    }
+}
+
+ul {
+    padding: 0 17px;
+
+    li a {
+        color: var(--lightblue);
+        text-decoration: underline;
+        font-size: 20px;
+    }
 }
