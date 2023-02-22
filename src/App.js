@@ -1,7 +1,7 @@
 import './App.css';
 import './css/main.css';
 import Header from './components/Header';
-import ContentPrint from './components/contentPrint';
+import ContentPrint from './components/ContentPrint';
 function App() {
   return (
     <div className="App">
