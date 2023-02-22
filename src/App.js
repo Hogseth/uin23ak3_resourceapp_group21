@@ -1,11 +1,12 @@
 import './App.css';
 import './css/main.css';
 import Header from './components/Header';
+import ContentPrint from './components/contentPrint';
 function App() {
   return (
     <div className="App">
      <Header/>
-     <h1> Hei</h1>
+     <ContentPrint/>
     </div>
   );
 }
