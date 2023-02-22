@@ -1,3 +1,6 @@
+import Nav from "./nav"
 export default function ContentPrint(){
-    return
+    return(
+        <Nav/>
+    )
 }
