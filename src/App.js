@@ -1,13 +1,26 @@
 import './App.css';
 import './css/main.css';
-import Header from './components/Header';
-import Button from './components/Button';
+import { Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout';
+import ressurser from './resources/ressurser'
+import ContentPrint from './components/ContentPrint';
+import ResourcePage from './components/ResourcePage';
+
 function App() {
   return (
-    <div className="App">
-     <Header />
-     <Button />
-    </div>
+    
+    <Routes>  
+      <Route element={<Layout/>}>
+        <Route index element={<ContentPrint/>}/>
+        <Route path=':title' element={<ResourcePage ressurser={ressurser} />}/>
+
+
+
+
+      </Route>
+    </Routes>
+
+
   );
 }
 
