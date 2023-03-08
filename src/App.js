@@ -1,13 +1,19 @@
 import './App.css';
 import './css/main.css';
-import Header from './components/Header';
-import Button from './components/Button';
+import resources from './resources/ressurser'
+import Layout from './components/Layout';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Article from './components/Article';
+
 function App() {
   return (
-    <div className="App">
-     <Header />
-     <Button />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/"element={<Layout />}>
+          <Route path=":slug" element={<Article resources={resources}/>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
