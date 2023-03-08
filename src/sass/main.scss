@@ -2,23 +2,19 @@ $lightblue: #25dfe6;
 $darkgrey: #707070;
 $lightgrey: #b8b8b8;
 
-body{color:blue;
-
+body {
+    background-color: white; 
+    padding: 2% 10%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    
-
-    h1{
-        
-        border: 1px solid var(--grey);
-        color: var(--darkgrey);
-        text-transform: uppercase;
-        padding: 2.5rem 2rem;
-        font-size: 2rem;
-    
-    }
-
+header h1{
+    border: 1px solid $lightgrey;
+    color: $darkgrey;
+    text-transform: uppercase;
+    padding: 2.5rem 2rem;
+    font-size: 2rem;
+    text-align: center;
 }
 
 body {
@@ -28,18 +24,27 @@ body {
 
 }
 
-button {
+.buttons a {
     font-size: 100%; 
     width: 30%;
     height: 20%;
-    color: var(--darkgrey);
+    color: $darkgrey;
     padding: 1rem;
+    text-decoration: none;
+    border: 1px solid $lightgrey;
+    border-bottom: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.inactiveBtn {
+    background-color: rgb(239, 239, 239);
 }
 
 .activeBtn{
     color: white;
-    background-color: var(--lightblue);
-    border: 2px solid var(--lightblue)
+    background-color: $lightblue;
+    border: 2px solid $lightblue
 }
 
 .buttons {
@@ -48,29 +53,14 @@ button {
     gap: 5px;
 }
 
-article {
-    border: 1px solid var(--grey);
-    border-top: 5px solid var(--lightblue);
+.article {
+    border: 1px solid $lightgrey;
+    border-top: 5px solid $lightblue;
     padding: 1rem 2rem;
-
-    p{
-        color: var(--darkgrey);
-        font-size: 20px;
-    }
-
-    h2 {
-        text-transform:  uppercase;
-        color: var(--darkgrey);
-    
-    }
+    color: $darkgrey;
+    font-size: 20px;
 }
 
-ul {
-    padding: 0 17px;
-
-    li a {
-        color: var(--lightblue);
-        text-decoration: underline;
-        font-size: 20px;
-    }
+.article a{
+    color: $lightblue;
 }

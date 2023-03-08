@@ -1,14 +1,17 @@
-import { Link } from "react-router-dom"
-import resources from "../resources/ressurser"
+import { Link, useParams } from "react-router-dom"
 
-export default function Button(){
+export default function Button({resources}){
+
+
+    const {slug} = useParams()
+
     return (
         <div className="buttons">
-        <Link to="html">HTML</Link>
-        <Link to="css">CSS</Link>
-        <Link to="javascript">JAVASCRIPT</Link>
-        <Link to="react">REACT</Link>
-        <Link to="headless-css">HEADLESS-CMS</Link>
+        <Link to="html" className={slug === "html" ? "activeBtn" : "inactiveBtn"}>HTML</Link>
+        <Link to="css" className={slug === "css" ? "activeBtn" : "inactiveBtn"}>CSS</Link>
+        <Link to="javascript" className={slug === "javascript" ? "activeBtn" : "inactiveBtn"}>JAVASCRIPT</Link>
+        <Link to="react" className={slug === "react" ? "activeBtn" : "inactiveBtn"}>REACT</Link>
+        <Link to="headless-cms" className={slug === "headless-cms" ? "activeBtn" : "inactiveBtn"}>HEADLESS-CMS</Link>
         </div>
     )
 }
