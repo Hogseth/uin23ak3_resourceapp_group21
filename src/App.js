@@ -13,10 +13,6 @@ function App() {
       <Route element={<Layout/>}>
         <Route index element={<ContentPrint/>}/>
         <Route path=':slug' element={<ResourcePage ressurser={ressurser} />}/>
-
-
-
-
       </Route>
     </Routes>
 
