@@ -7,7 +7,7 @@ export default function main(){
         <>
             {resources.map((resource) => (
 
-                <Link to={resource.title}>
+                <Link to={resource.url}>
                     <Article title={resource.title}/>
                 </Link>
         ))}

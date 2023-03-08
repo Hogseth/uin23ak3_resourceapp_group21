@@ -5,21 +5,20 @@ export default function Layout(){
         <div id="container">
             <header>
 
-                <Link>
+                <Link to="/">
                 
                 <h1>Ressursarkiv</h1>
 
                 </Link>
 
             </header>
-
+        
             <main>
                 <Outlet/>
             </main>
+            <footer>
 
-                <footer>
-
-                </footer>
+             </footer>
         </div>
     )
 }

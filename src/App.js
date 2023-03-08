@@ -12,7 +12,7 @@ function App() {
     <Routes>  
       <Route element={<Layout/>}>
         <Route index element={<ContentPrint/>}/>
-        <Route path=':title' element={<ResourcePage ressurser={ressurser} />}/>
+        <Route path=':slug' element={<ResourcePage ressurser={ressurser} />}/>
 
 
 
